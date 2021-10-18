@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.text {
+  margin-right: 5px;
+}
+.bad {
+  font-weight: 700;
+  color: #d22b2b;
+}
+.good {
+  font-weight: 700;
+  color: #55ae3a;
+}

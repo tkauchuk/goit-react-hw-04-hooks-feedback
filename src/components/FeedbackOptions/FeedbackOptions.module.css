@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-right: 5px;
+}
+.button {
+  display: block;
+  background: transparent;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button::first-letter {
+  text-transform: uppercase;
+}
+.button:active {
+  color: #ffffff;
+  background: #055c9d;
+}
