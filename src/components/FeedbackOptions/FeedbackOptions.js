@@ -6,15 +6,15 @@ function FeedbackOptions({options, onLeaveFeedback}) {
         <ul className={styles.list}>{
             options.map((option, index) => {
                 return (
-                    <li className={styles.item} key={index}>
-                        <button
-                            className={styles.button}
-                            type="button"
-                            onClick={() => onLeaveFeedback(option)}
-                        >
-                            {option}
-                        </button>
-                    </li>
+                  <li className={styles.item} key={index}>
+                      <button
+                        className={styles.button}
+                        type='button'
+                        onClick={() => onLeaveFeedback(option)}
+                      >
+                          {option}
+                      </button>
+                  </li>
                 );
             })
         }</ul>

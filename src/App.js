@@ -11,13 +11,13 @@ function App() {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-  
+
   const onFeedbackButtonClick = response => {
     switch (response) {
       case 'good':
         setGood(state => state + 1);
         break;
-      
+
       case 'neutral':
         setNeutral(state => state + 1);
         break;
@@ -30,7 +30,7 @@ function App() {
         return;
     }
   }
-
+  
   const countTotalFeedback = () => {
     const responses = [good, neutral, bad];
     return responses.reduce((accumulator, responses) => accumulator + responses, 0)
